@@ -29,6 +29,7 @@ public class AddCategory extends BaseTest {
         // Categories page
 
         driver.findElement(By.xpath(LocatorCMS.menuProducts)).click();
+        sleep(1);
         driver.findElement(By.xpath(LocatorCMS.menuCategory)).click();
         Assert.assertTrue(driver.findElement(By.xpath(LocatorCMS.headerCategories)).isDisplayed(), "Không đến được trang All Categories");
         sleep(1);

@@ -11,17 +11,20 @@ public class LocatorCMS {
 
     //Menu Products
     public static String menuProducts = "//span[normalize-space()='Products']";
-    public static String menuAddNewProduct = "//span[normalize-space()='Add New Product']";
     public static String menuAllProducts = "//span[normalize-space()='All products']";
-
+    public static String menuAddNewProduct = "//span[normalize-space()='Add New Product']";
     public static String menuCategory = "//span[normalize-space()='Category']";
+
+    // Products list Page
+    public static String inputSearchProducts = "//input[@id='search']";
+    public static String popupAddProductSuccess = "//span[@data-notify='message']";
+    public static String firstItemOnProducts = "//span[@class='text-muted text-truncate-2']";
 
 
     // Add New Product Page
+    public static String headerAddNewCustomer = "//h5[normalize-space()='Add New Product']";
 
     // Product Information
-
-    public static String headerAddNewCustomer = "//h5[normalize-space()='Add New Product']";
 
     public static String inputProductName = "//input[@placeholder='Product Name']";
     public static String dropdownCategory = "//div[@id='category']//button[@type='button']";
@@ -31,7 +34,30 @@ public class LocatorCMS {
     public static String inputUnit = "//input[@name='unit']";
     public static String inputWeight = "//input[@name='weight']";
     public static String inputMinimumPurchaseQty = "//input[@name='min_qty']";
-    public static String inputTags = "//input[@name='tags[]']";
+    public static String inputTags = "//span[@role='textbox']";
+
+    //Product Images table
+    public static String buttonGalleryImages = "//div[@data-multiple='true']//div[@class='input-group-text bg-soft-secondary font-weight-medium'][normalize-space()='Browse']";
+    public static String selectGalleryImages = "//div[@title='product01.jpg']//img[@class='img-fit']";
+    public static String buttonAddFilesPro = "//button[normalize-space()='Add Files']";
+
+    // Product Videos table
+    public static String dropdownVideoProvider = "//button[@title='Youtube']";
+    public static String inputVideoLink = "//input[@placeholder='Video Link']";
+
+    // Product Variation tab
+    public static String checkboxColorsActive = "//div[@class='col-md-1']//span";
+    public static String dropdownColors = "//button[@data-id='colors']";
+
+    public static String inputSearchColors = "//div[@class='dropdown-menu show']//input[@aria-label='Search']";
+
+    // Product price + stock table
+    public static String inputUnitprice = "//input[@placeholder='Unit price']";
+    public static String inputDiscount = "//input[@placeholder='Discount']";
+
+    // Button Save
+    public static String buttonSaveAndUnpublish  = "//button[normalize-space()='Save & Unpublish']";
+    public static String buttonSaveAndPublish  = "//button[normalize-space()='Save & Publish']";
 
     // Categories list Page
 
